@@ -14,58 +14,98 @@ I build small experiments, visual systems, and simple digital experiences to exp
 - Simple digital tools and experiences
 - AI-assisted creation
 
-# Generative Flower — Order × Chaos
-🌐 **[Interactive Web Experience](https://york-14.github.io/Generative-flower-Order-Chaos/)**
-> Can beauty emerge from the balance between order and chaos?
-This project explores this question through **generative art, mathematical dynamics, and computational models of beauty**.
-Using a symmetric chaotic map inspired by the work of **Michael Field and Martin Golubitsky**, the project generates thousands of flower-like forms and explores the relationship between:
-**Symmetry → Complexity → Chaos → Beauty**
 ---
+
+# Generative Flower — Order × Chaos
+
+🌐 **[Interactive Web Experience](https://york-14.github.io/Generative-flower-Order-Chaos/)**
+
+> Can beauty emerge from the balance between order and chaos?
+
+This project explores this question through **generative art, mathematical dynamics, and computational models of beauty**.
+
+Using a symmetric chaotic map inspired by the work of **Michael Field and Martin Golubitsky**, the project generates thousands of flower-like forms and explores the relationship between:
+
+**Symmetry → Complexity → Chaos → Beauty**
+
+---
+
 ## ✨ Explore the Flowers
+
 ### 2D — Generative Flower Studio
+
 **[Open the interactive experience →](https://york-14.github.io/Generative-flower-Order-Chaos/)**
+
 Explore a mathematical space of flower-like attractors by changing parameters such as:
+
 - λ
 - α
 - β
 - γ
 - ω
 - n
+
 You can:
+
 - Generate flowers randomly
 - Explore parameter space
 - Change colors and visual appearance
 - Save flowers as PNG
 - Compare two flowers and choose your favorite
+
 The experience gradually learns your visual preference directly in the browser.
+
 ### 3D — Generative Flower
+
 **[Open the 3D experience →](https://york-14.github.io/Generative-flower-Order-Chaos/3d.html)**
+
 The 3D version extends the mathematical system by introducing a height dimension.
+
 The resulting attractors can be rotated and explored interactively.
+
 ---
-# The Question
-## What makes a mathematical form beautiful?
+
+## The Question
+
+### What makes a mathematical form beautiful?
+
 A flower can look beautiful because it has:
+
 - Order
 - Symmetry
 - Complexity
 - Contrast
 - Variation
 - A sense of life
+
 But where does beauty emerge?
+
 Too much order can become repetitive.
+
 Too much chaos can become noise.
+
 This project explores the hypothesis that beauty may emerge somewhere between the two.
+
 The goal is not to prove that this is the universal definition of beauty.
+
 Instead, the goal is to build a system in which the hypothesis can be **visualized, explored, measured, and tested**.
+
 ---
-# Mathematical Foundation
+
+## Mathematical Foundation
+
 The flower-like forms are generated using a symmetric chaotic map in the complex plane.
+
 By varying the parameters, a large variety of flower-like structures can be generated.
+
 ---
-# From Mathematical Forms to a Shape Map
+
+## From Mathematical Forms to a Shape Map
+
 The project does not stop at generating individual flowers.
+
 Thousands of generated forms can be analyzed and mapped into a visual space.
+
 ```text
 Mathematical Parameters
           ↓
@@ -80,55 +120,56 @@ Mathematical Parameters
       Shape Map
           ↓
    Beauty Evaluation
+```
 
 The shape representation uses polar resampling and angular FFT features so that the representation is invariant to rotation and reflection.
 
 The resulting feature space is reduced using:
 
-* PCA
-* UMAP
-* t-SNE
+- PCA
+- UMAP
+- t-SNE
 
 and explored using HDBSCAN clustering.
 
-⸻
+---
 
-A Computational Model of Beauty
+## A Computational Model of Beauty
 
 The project experiments with a simple hypothesis:
 
-Beauty = Order × Complexity × Contrast
+**Beauty = Order × Complexity × Contrast**
 
-Order
-
-Measures related to:
-
-* rotational symmetry
-* reflection symmetry
-* angular contrast
-
-Complexity
+### Order
 
 Measures related to:
 
-* fractal / box-counting dimension
-* Lyapunov exponent
-* chaotic behavior
+- rotational symmetry
+- reflection symmetry
+- angular contrast
 
-Contrast
+### Complexity
 
 Measures related to:
 
-* edge sharpness
-* negative space
-* visual clarity
-* isolated noise
+- fractal / box-counting dimension
+- Lyapunov exponent
+- chaotic behavior
+
+### Contrast
+
+Measures related to:
+
+- edge sharpness
+- negative space
+- visual clarity
+- isolated noise
 
 The three components are combined into an exploratory beauty score.
 
-⸻
+---
 
-Human Preference
+## Human Preference
 
 A mathematical beauty function is only a hypothesis.
 
@@ -144,9 +185,9 @@ As more comparisons are made, the system gradually adapts its search toward the 
 
 The preference data is stored only in the browser’s local storage and is not sent to a server.
 
-⸻
+---
 
-Order × Chaos
+## Order × Chaos
 
 The central idea of this project is simple:
 
@@ -168,48 +209,48 @@ And eventually:
 
 “Can beauty itself be explored as a computational space?”
 
-⸻
+---
 
-Research Directions
+## Research Directions
 
 This project is an ongoing exploration rather than a finished scientific model.
 
 Future directions include:
 
-* Exploring larger mathematical model spaces
-* Better measures of visual complexity
-* More rigorous symmetry descriptors
-* Improved perceptual models
-* Larger-scale human preference experiments
-* Learning aesthetic preferences from pairwise comparisons
-* Exploring the relationship between mathematical structure and perceived beauty
-* Extending the system from 2D to 3D and beyond
+- Exploring larger mathematical model spaces
+- Better measures of visual complexity
+- More rigorous symmetry descriptors
+- Improved perceptual models
+- Larger-scale human preference experiments
+- Learning aesthetic preferences from pairwise comparisons
+- Exploring the relationship between mathematical structure and perceived beauty
+- Extending the system from 2D to 3D and beyond
 
-⸻
+---
 
-Creator
+## Creator
 
-York-14
+**York-14**
 
 Creator & Explorer exploring:
 
-* Generative Art
-* Creative Coding
-* Mathematical Visualization
-* Perception
-* Beauty
-* Complexity
-* Digital Creation
+- Generative Art
+- Creative Coding
+- Mathematical Visualization
+- Perception
+- Beauty
+- Complexity
+- Digital Creation
 
 Intelligence is the ability to explore.
 
-⸻
+---
 
-日本語
+**日本語**
 
-🌸 Generative Flower — Order × Chaos
+# 🌸 Generative Flower — Order × Chaos
 
-秩序とカオスのバランスから、美しさは生まれるのか？
+> 秩序とカオスのバランスから、美しさは生まれるのか？
 
 このプロジェクトは、生成アート・数理モデル・知覚・美しさの関係を探究するインタラクティブな実験です。
 
@@ -217,61 +258,61 @@ Michael Field と Martin Golubitsky の研究に着想を得た対称性を持�
 
 そして、
 
-Symmetry → Complexity → Chaos → Beauty
+**Symmetry → Complexity → Chaos → Beauty**
 
 という関係を、視覚的・数理的に探索します。
 
-⸻
+---
 
-✨ 花を探索する
+## ✨ 花を探索する
 
-2D — Generative Flower Studio
+### 2D — Generative Flower Studio
 
-インタラクティブ作品を見る →⁠￼
+**[インタラクティブ作品を見る →](https://york-14.github.io/Generative-flower-Order-Chaos/)**
 
 数学的に生成される花の形を、パラメータを変化させながら探索できます。
 
 主なパラメータ：
 
-* λ
-* α
-* β
-* γ
-* ω
-* n
+- λ
+- α
+- β
+- γ
+- ω
+- n
 
 できること：
 
-* 花をランダムに生成
-* パラメータ空間を探索
-* 色や視覚表現を変更
-* PNGとして保存
-* 2つの花を比較して、好きな方を選択
+- 花をランダムに生成
+- パラメータ空間を探索
+- 色や視覚表現を変更
+- PNGとして保存
+- 2つの花を比較して、好きな方を選択
 
 ユーザーが選択した結果から、ブラウザ上で視覚的な好みを学習する仕組みも実験しています。
 
-3D — Generative Flower
+### 3D — Generative Flower
 
-3D作品を見る →⁠￼
+**[3D作品を見る →](https://york-14.github.io/Generative-flower-Order-Chaos/3d.html)**
 
 2Dの数理モデルを拡張し、高さ方向の変数を加えることで、3次元の花のような形態を生成します。
 
 生成された形態を回転させながら、立体的に探索できます。
 
-⸻
+---
 
-問い
+## 問い
 
-数学的に生成された形は、なぜ美しく感じられるのか？
+### 数学的に生成された形は、なぜ美しく感じられるのか？
 
 花が美しいと感じられる理由には、
 
-* 秩序
-* 対称性
-* 複雑性
-* コントラスト
-* 変化
-* 生命感
+- 秩序
+- 対称性
+- 複雑性
+- コントラスト
+- 変化
+- 生命感
 
 などが関係しているかもしれません。
 
@@ -291,13 +332,13 @@ Symmetry → Complexity → Chaos → Beauty
 
 むしろ、
 
-美しさについての仮説を、可視化し、探索し、測定し、人間の知覚によって検証するための実験環境
+**美しさについての仮説を、可視化し、探索し、測定し、人間の知覚によって検証するための実験環境**
 
 をつくることを目指しています。
 
-⸻
+---
 
-数学的基盤
+## 数学的基盤
 
 花のような形態は、複素平面上の対称性を持つカオス写像から生成されます。
 
@@ -305,13 +346,13 @@ Symmetry → Complexity → Chaos → Beauty
 
 同じ数式から、
 
-秩序 → 複雑性 → カオス
+**秩序 → 複雑性 → カオス**
 
 という異なる状態を連続的に探索できることが、このシステムの特徴です。
 
-⸻
+---
 
-数学的な形から「形態の地図」へ
+## 数学的な形から「形態の地図」へ
 
 このプロジェクトでは、単に美しい花を1つ生成することだけを目的としていません。
 
@@ -321,6 +362,7 @@ Symmetry → Complexity → Chaos → Beauty
 
 を探索します。
 
+```text
 数学的パラメータ
        ↓
   生成ダイナミクス
@@ -334,63 +376,64 @@ Symmetry → Complexity → Chaos → Beauty
     形態の地図
        ↓
    美しさの評価
+```
 
 形状は極座標による再サンプリングと角度方向のFFTなどを用いて特徴量化し、回転や反転による影響を抑えた形状表現を試みています。
 
 その特徴空間を、
 
-* PCA
-* UMAP
-* t-SNE
-* HDBSCAN
+- PCA
+- UMAP
+- t-SNE
+- HDBSCAN
 
 などを用いて探索します。
 
-⸻
+---
 
-美しさを計算する
+## 美しさを計算する
 
 このプロジェクトでは、美しさについて一つの仮説を置いています。
 
-Beauty = Order × Complexity × Contrast
+**Beauty = Order × Complexity × Contrast**
 
-Order — 秩序
+### Order — 秩序
 
 例えば、
 
-* 回転対称性
-* 鏡映対称性
-* 角度方向のコントラスト
+- 回転対称性
+- 鏡映対称性
+- 角度方向のコントラスト
 
 など。
 
-Complexity — 複雑性
+### Complexity — 複雑性
 
 例えば、
 
-* フラクタル次元
-* Box-counting dimension
-* Lyapunov exponent
-* カオス的挙動
+- フラクタル次元
+- Box-counting dimension
+- Lyapunov exponent
+- カオス的挙動
 
 など。
 
-Contrast — コントラスト
+### Contrast — コントラスト
 
 例えば、
 
-* エッジの明瞭さ
-* ネガティブスペース
-* 視覚的な明瞭性
-* 孤立したノイズ
+- エッジの明瞭さ
+- ネガティブスペース
+- 視覚的な明瞭性
+- 孤立したノイズ
 
 など。
 
 これらを組み合わせ、探索的な「美しさのスコア」を作ります。
 
-⸻
+---
 
-人間の好みを取り入れる
+## 人間の好みを取り入れる
 
 しかし、数学的に定義した「美しさ」は、あくまで仮説です。
 
@@ -410,9 +453,9 @@ Contrast — コントラスト
 
 選択データはブラウザのローカルストレージに保存され、サーバーには送信されません。
 
-⸻
+---
 
-Order × Chaos
+## Order × Chaos
 
 このプロジェクトの中心にある考えはシンプルです。
 
@@ -436,51 +479,51 @@ Order × Chaos
 
 という問いへ進んでいきます。
 
-⸻
+---
 
-今後の探索
+## 今後の探索
 
 このプロジェクトは、完成した科学モデルではなく、継続的な探索です。
 
 今後は、
 
-* より広い数理モデルの探索
-* 視覚的複雑性のより良い指標
-* より厳密な対称性の記述
-* 人間の知覚に近い美的モデル
-* より大規模な人間の選好実験
-* ペア比較からの美的嗜好の学習
-* 数学的構造と知覚される美しさの関係
-* 2Dから3D、さらに高次元への拡張
+- より広い数理モデルの探索
+- 視覚的複雑性のより良い指標
+- より厳密な対称性の記述
+- 人間の知覚に近い美的モデル
+- より大規模な人間の選好実験
+- ペア比較からの美的嗜好の学習
+- 数学的構造と知覚される美しさの関係
+- 2Dから3D、さらに高次元への拡張
 
 などを探究していきます。
 
-⸻
+---
 
-Creator
+## Creator
 
-York-14
+**York-14**
 
 Creator & Explorer
 
 Exploring:
 
-* Generative Art
-* Creative Coding
-* Mathematical Visualization
-* Perception
-* Beauty
-* Complexity
-* Digital Creation
+- Generative Art
+- Creative Coding
+- Mathematical Visualization
+- Perception
+- Beauty
+- Complexity
+- Digital Creation
 
 Intelligence is the ability to explore.
 
 知能とは、探索する能力である。
 
-⸻
+---
 
-🌐 Generative Flowerを体験する⁠￼
+🌐 [Generative Flowerを体験する](https://york-14.github.io/Generative-flower-Order-Chaos/)
 
-🐙 ソースコードを見る⁠￼
+🐙 ソースコードを見る
 
-📷 Instagram⁠
+📷 [Instagram](https://www.instagram.com/york8worpco/)
